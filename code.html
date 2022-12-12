@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="style.css" )>
+</head>
+
+<body>
+    <div class="heading">
+        <div class="title">
+            <h1>Hi! My name is <br> Kaelyn Crews</h1>
+        </div>
+    </div>
+    <div class="headerbar"></div>
+    <div id="navbar">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./photo.html">Gallery</a>
+        <a href="./code.html">Code</a>
+        <a href="./links.html">Links</a>
+    </div>
+    <div class="intro">
+        <h1>Code</h1>
+        <p>Here you can find a couple examples of code that I have created for classes!</p>
+    </div>
+    <pre>
+        <code>
+            function fizzbuzz() {
+                var display = document.getElementById('display');
+                var displayHTML = "";
+                var divisible = '';
+            
+                for (i = 1; i < 101; i++) {
+                    if (i % 3 === 0 && i % 5 === 0) {
+                        divisible = 'fizzbuzz';
+                    } else if (i % 3 === 0) {
+                        divisible = 'fizz';
+                    } else if (i % 5 === 0) {
+                        divisible = 'buzz';
+                    } else {
+                        divisible = i;
+                    }
+            
+                displayHTML += "p" + divisible + "p";
+            
+                }
+                display.innerHTML = displayHTML
+            }
+        </code>
+        <code>
+            do_calulation = True
+            while (do_calulation):
+    
+            while True:
+                try:
+                    radius = float(input("Radius of the cylinder:"))
+                    if radius < 0:
+                        raise ValueError
+                    break
+                except ValueError:
+                    print('Please enter a positive numerical value.')
+
+            while True:
+                try:
+                    height = float(input("Height of the cylinder:"))
+                    if height < 0:
+                        raise ValueError
+                    break
+                except ValueError:
+                    print('Please enter a positive numerical value.')
+
+            volume = 3.14159 * height * radius * radius
+
+            print("The volume of the cylinder is ", volume)
+
+            another_calulation = input("Would you like to perfofm another calculation? (y/n)")
+            if (another_calulation != "y"):
+                do_calculation = False
+                break
+        </code>
+        <code>
+            import turtle
+
+            num_squares = 30
+            height = 100
+            angle = 12
+            speed = 15
+
+            turtle.speed(speed)
+
+
+            for x in range(num_squares):
+                for i in range(4):
+                    turtle.forward(height)
+                    turtle.left(90)
+                turtle.right(angle)
+        </code>
+        <code>
+            numbers = [6, 5, 3, 8, 4, 2, 5, 4, 11, 43, 1, 17, 27, 90, 77, 62, 51, 47, 82, 86, 20]
+
+            length = len(numbers)
+
+            total = sum(numbers)
+
+            average = (total / length)
+
+            print(f'This list has {length} numbers.\n')
+            print(f'The sum of the numbers is {total}.\n')
+            print(f'The average of the numbers is {average}.\n')
+            print(f'Below are all of the list items:')
+            i = 0
+
+            while i < length:
+                print(f'Item {i}: {numbers[i]}')
+                i +=1
+
+            print(f'\nHere is every other list item: ')
+
+            for x in range(0, length, 2):
+                print(f'Item {x}: {numbers[x]}')
+
+        </code>
+    </pre>
+</body>
+
+</html>
